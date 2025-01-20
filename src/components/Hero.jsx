@@ -30,16 +30,17 @@ const Hero = () => {
       </p>
 
       {/* Button Group */}
-      <div className="flex flex-col sm:flex-row justify-center gap-4 sm:gap-6">
-        <button className="bg-red-500 text-white px-6 py-2 rounded-full shadow-sm hover:bg-red-600 transition sm:order-2">
-          Sign up
-        </button>
+      <div className="flex flex-col sm:flex-row-reverse justify-center items-center gap-3 sm:gap-4 w-full">
+  <button className="bg-red-500 text-white py-2 px-5 rounded-full shadow-md hover:bg-red-600 transition sm:w-auto w-max text-center text-base font-medium">
+    Sign up
+  </button>
 
-        <button className="bg-white text-gray-700 border border-gray-300 px-6 py-2 rounded-full shadow-sm hover:bg-gray-100 transition sm:order-1 flex items-center space-x-2">
-          <MdPlayCircleOutline className="text-2xl" />
-          <span>Demo</span>
-        </button>
-      </div>
+  <button className="bg-gray-100 text-gray-700 border border-gray-300 py-2 px-5 rounded-full shadow-md hover:bg-gray-200 transition sm:w-auto w-max flex items-center justify-center space-x-2 text-base font-medium">
+    <MdPlayCircleOutline className="text-lg" />
+    <span>Demo</span>
+  </button>
+</div>
+
 
       {/* Chat Image */}
       <div className="flex justify-center items-center">
