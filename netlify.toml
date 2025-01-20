@@ -1,0 +1,14 @@
+[[headers]]
+  for = "/assets/*.js"  # Only apply this header to JavaScript files in the /assets/ folder
+  [headers.values]
+    Content-Type = "application/javascript"
+
+[[headers]]
+  for = "/assets/*"  # Apply this for other assets like images and styles
+  [headers.values]
+    Content-Type = "application/octet-stream"  # Default for other static files
+
+[[headers]]
+  for = "/*"  # Apply this header to all HTML files
+  [headers.values]
+    Content-Type = "text/html; charset=UTF-8"
