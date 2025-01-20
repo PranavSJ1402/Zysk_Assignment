@@ -98,9 +98,10 @@ const Footer = () => {
 
         {/* Footer Bottom */}
         <div className="flex flex-col md:flex-row justify-between items-center mt-6 text-gray-500 text-sm">
-          <img src={Logo} alt="Company Logo" className="h-8" /> {/* Imported Logo */}
-          <p>© 2077 zysktechnologies. All rights reserved.</p>
-        </div>
+        <div className="flex flex-col md:flex-row justify-start md:justify-between items-start w-full mt-6 text-gray-500 text-sm ml-0">
+  <img src={Logo} alt="Company Logo" className="h-8" /> {/* Imported Logo */}
+  <p className="mt-4 ml-0">© 2077 zysktechnologies. All rights reserved.</p>
+</div>
       </div>
     </footer>
   );
